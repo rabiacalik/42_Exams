@@ -1,0 +1,24 @@
+Assignment name  : pgcd
+Expected files   : pgcd.c
+Allowed functions: printf, atoi, malloc, free
+--------------------------------------------------------------------------------
+
+İki kesinlikle pozitif olanı temsil eden iki dizi alan bir program yazın.
+bir int'e uyan tamsayılar.
+
+En yüksek ortak paydalarını ve ardından yeni bir satır ekleyin (Bu her zaman bir
+kesinlikle pozitif tamsayı).
+
+Parametre sayısı 2 değilse, yeni bir satır görüntüleyin.
+Examples:
+
+$> ./pgcd 42 10 | cat -e
+2$
+$> ./pgcd 42 12 | cat -e
+6$
+$> ./pgcd 14 77 | cat -e
+7$
+$> ./pgcd 17 3 | cat -e 
+1$
+$> ./pgcd | cat -e
+$

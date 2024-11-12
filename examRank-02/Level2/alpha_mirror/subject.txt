@@ -1,0 +1,27 @@
+Assignment name  : alpha_mirror
+Expected files   : alpha_mirror.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+ 
+Bir dizi alan ve bu diziyi görüntüleyen alpha_mirror adında bir program yazın.
+her alfabetik karakteri karşıt alfabetik karakterle değiştirdikten sonra
+karakter, ardından yeni bir satır.
+ 
+'a', 'z' olur, 'Z', 'A' olur
+'d', 'w' olur, 'M', 'N' olur
+ 
+ve benzeri.
+ 
+Durum değiştirilmedi.
+ 
+Bağımsız değişken sayısı 1 değilse, yalnızca yeni bir satır görüntüleyin.
+ 
+Examples:
+ 
+$>./alpha_mirror "abc"
+zyx
+$>./alpha_mirror "My horse is Amazing." | cat -e
+Nb slihv rh Znzarmt.$
+$>./alpha_mirror | cat -e
+$
+$>

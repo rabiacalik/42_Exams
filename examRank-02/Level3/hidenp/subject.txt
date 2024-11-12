@@ -1,0 +1,26 @@
+Assignment name  : hidenp
+Expected files   : hidenp.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Hidenp adında iki dizi alan ve 1 gösteren bir program yazınız.
+ilk dize ikinci dizede gizliyse, ardından yeni bir satır gelir,
+aksi halde 0 ve ardından yeni bir satır görüntüler.
+
+s1 ve s2 dizi olsun. Mümkünse s1'in s2'de gizli olduğunu söylüyoruz.
+s2'deki s1'deki her karakteri s1'de göründükleri sırayla bulun.
+Ayrıca, boş dizi herhangi bir dizide gizlidir.
+
+Parametre sayısı 2 değilse, program yeni bir satır görüntüler.
+
+Examples :
+
+$>./hidenp "fgex.;" "tyf34gdgf;'ektufjhgdgex.;.;rtjynur6" | cat -e
+1$
+$>./hidenp "abc" "2altrb53c.sse" | cat -e
+1$
+$>./hidenp "abc" "btarc" | cat -e
+0$
+$>./hidenp | cat -e
+$
+$>

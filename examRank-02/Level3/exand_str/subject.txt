@@ -1,0 +1,26 @@
+Assignment name  : expand_str
+Expected files   : expand_str.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Bir dizi alan ve tam olarak üç boşlukla görüntüleyen bir program yazınız.
+başında veya sonunda boşluk veya sekme olmadan her kelimenin arasında,
+ardından yeni bir satır gelir.
+
+Sözcük, dizenin boşluklarla/sekmelerle veya
+dizenin başlangıcı/bitişi.
+
+Parametre sayısı 1 değilse veya kelime yoksa, sadece
+yeni bir satır
+
+Examples:
+
+$> ./expand_str "See? It's easy to print the same thing" | cat -e
+See?   It's   easy   to   print   the   same   thing$
+$> ./expand_str " this        time it      will     be    more complex  " | cat -e
+this   time   it   will   be   more   complex$
+$> ./expand_str "No S*** Sherlock..." "nAw S*** ShErLaWQ..." | cat -e
+$
+$> ./expand_str "" | cat -e
+$
+$>

@@ -1,0 +1,27 @@
+Assignment name  : str_capitalizer
+Expected files   : str_capitalizer.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Bir veya daha fazla dizge alan ve her bağımsız değişken için,
+her kelimenin ilk karakterini büyük harfle yazar (Tabii ki bir harfse),
+kalanını küçük harfle yazar ve sonucu standart çıktıda görüntüler,
+ardından \n gelir.
+
+Bir "sözcük", boşluklarla/sekmelerle ayrılmış bir dizenin parçası olarak tanımlanır veya
+dizenin başına/sonuna göre. Bir kelimenin sadece bir harfi varsa, o olmalıdır.
+büyük harfle
+
+Argüman yoksa program \n göstermelidir.
+
+Example:
+
+$> ./str_capitalizer | cat -e
+$
+$> ./str_capitalizer "a FiRSt LiTTlE TESt" | cat -e
+A First Little Test$
+$> ./str_capitalizer "__SecONd teST A LITtle BiT   Moar comPLEX" "   But... This iS not THAT COMPLEX" "     Okay, this is the last 1239809147801 but not    the least    t" | cat -e
+__second Test A Little Bit   Moar Complex$
+   But... This Is Not That Complex$
+     Okay, This Is The Last 1239809147801 But Not    The Least    T$
+$>

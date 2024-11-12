@@ -1,0 +1,20 @@
+Assignment name  : swap_bits
+Expected files   : swap_bits.c
+Allowed functions:
+--------------------------------------------------------------------------------
+
+Bir bayt alan, yarılarını değiştiren (örnek gibi) ve
+sonucu döndürür.
+
+İşleviniz aşağıdaki gibi bildirilmelidir:
+
+unsigned char	swap_bits(unsigned char octet);
+
+Example:
+
+  1 byte
+_____________
+ 0100 | 0001
+     \ /
+     / \
+ 0001 | 0100

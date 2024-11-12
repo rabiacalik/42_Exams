@@ -1,0 +1,15 @@
+Assignment name  : max
+Expected files   : max.c
+Allowed functions:
+--------------------------------------------------------------------------------
+
+Aşağıdaki işlevi yazın:
+
+int		max(int* tab, unsigned int len);
+
+İlk parametre bir int dizisidir, ikincisi ise içindeki öğelerin sayısıdır.
+dizi
+
+İşlev, dizide bulunan en büyük sayıyı döndürür.
+
+Dizi boşsa, işlev 0 döndürür.

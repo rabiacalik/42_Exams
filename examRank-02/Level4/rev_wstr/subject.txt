@@ -1,0 +1,29 @@
+Assignment name  : rev_wstr
+Expected files   : rev_wstr.c
+Allowed functions: write, malloc, free
+--------------------------------------------------------------------------------
+
+Bir diziyi parametre olarak alan ve içindeki kelimeleri ekrana yazdıran bir program yazınız.
+Ters sipariş.
+
+Bir "sözcük", dizenin boşluklar ve/veya sekmelerle sınırlanan bir parçasıdır veya
+dizenin başlangıcı/bitişi.
+
+Parametre sayısı 1'den farklı ise, program
+'\n'.
+
+Test edilecek parametrelerde herhangi bir "ilave" olmayacaktır.
+boşluklar (başlangıçta veya sonda ek boşluk olmayacağı anlamına gelir)
+dizenin sonu ve sözcükler her zaman tam olarak bir boşlukla ayrılacaktır.
+
+Examples:
+
+$> ./rev_wstr "You hate people! But I love gatherings. Isn't it ironic?" | cat -e
+ironic? it Isn't gatherings. love I But people! hate You$
+$>./rev_wstr "abcdefghijklm"
+abcdefghijklm
+$> ./rev_wstr "Wingardium Leviosa" | cat -e
+Leviosa Wingardium$
+$> ./rev_wstr | cat -e
+$
+$>

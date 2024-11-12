@@ -1,0 +1,33 @@
+Assignment name  : rostring
+Expected files   : rostring.c
+Allowed functions: write, malloc, free
+--------------------------------------------------------------------------------
+
+Bir dizi alan ve döndürdükten sonra bu diziyi görüntüleyen bir program yazınız.
+sola bir kelime.
+
+Böylece ilk kelime son olur ve diğerleri aynı sırada kalır.
+
+Bir "sözcük", boşluklarla/sekmelerle ayrılmış bir dizenin parçası olarak tanımlanır veya
+dizenin başına/sonuna göre.
+
+Çıktıda kelimeler yalnızca bir boşlukla ayrılacaktır.
+
+Birden az bağımsız değişken varsa, program \n görüntüler.
+Example:
+
+$>./rostring "abc   " | cat -e
+abc$
+$>
+$>./rostring "Que la      lumiere soit et la lumiere fut"
+la lumiere soit et la lumiere fut Que
+$>
+$>./rostring "     AkjhZ zLKIJz , 23y"
+zLKIJz , 23y AkjhZ
+$>
+$>./rostring "first" "2" "11000000"
+first
+$>
+$>./rostring | cat -e
+$
+$>

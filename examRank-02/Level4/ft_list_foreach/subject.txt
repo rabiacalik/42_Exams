@@ -1,0 +1,25 @@
+Assignment name  : ft_list_foreach
+Expected files   : ft_list_foreach.c, ft_list.h
+Allowed functions: 
+--------------------------------------------------------------------------------
+
+Bir liste ve işlev işaretçisi alan ve bunu uygulayan bir işlev yazın.
+listenin her elemanına işlev.
+
+Aşağıdaki şekilde beyan edilmelidir:
+
+void    ft_list_foreach(t_list *begin_list, void (*f)(void *));
+
+f ile gösterilen fonksiyon şu şekilde kullanılacaktır:
+
+(*f)(list_ptr->data);
+
+Aşağıdaki yapıyı kullanmalı ve onu adlı bir dosya olarak teslim etmelisiniz.
+
+ft_list.h:
+
+typedef struct    s_list
+{
+    struct s_list *next;
+    void          *data;
+}                 t_list;

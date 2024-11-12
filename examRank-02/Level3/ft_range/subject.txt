@@ -1,0 +1,19 @@
+ Assignment name  : ft_range
+Expected files   : ft_range.c
+Allowed functions: malloc
+--------------------------------------------------------------------------------
+
+Aşağıdaki işlevi yazın:
+
+int *ft_range(int start, int end);
+
+(malloc() ile) bir tamsayı dizisi ayırmalı, ardışık olarak doldurmalıdır.
+başlangıçta başlayan ve bitişte biten değerler (Başlangıç ​​ve bitiş dahil!), ardından
+dizinin ilk değerine bir işaretçi döndürür.
+
+Examples:
+
+- (1, 3) ile 1, 2 ve 3'ü içeren bir dizi döndürürsünüz.
+- With (-1, 2) you will return an array containing -1, 0, 1 and 2.
+- With (0, 0) you will return an array containing 0.
+- With (0, -3) you will return an array containing 0, -1, -2 and -3.

@@ -1,0 +1,13 @@
+Assignment name  : print_bits
+Expected files   : print_bits.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Bir bayt alan ve onu NEWLINE OLMADAN ikili olarak yazdıran bir işlev yazın
+SONUNDA.
+
+Your function must be declared as follows:
+
+void	print_bits(unsigned char octet);
+
+Örnek, print_bits'e 2 iletirseniz, "00000010" yazdırır

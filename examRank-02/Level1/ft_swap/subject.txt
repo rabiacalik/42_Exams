@@ -1,0 +1,11 @@
+Assignment name  : ft_swap
+Expected files   : ft_swap.c
+Allowed functions: 
+--------------------------------------------------------------------------------
+
+Adresleri aynı olan iki tamsayının içeriğini değiştiren bir fonksiyon yazınız.
+parametre olarak geçirilir.
+
+İşleviniz aşağıdaki gibi bildirilmelidir:
+
+void	ft_swap(int *a, int *b);

@@ -1,0 +1,10 @@
+Assignment name  : ft_strlen
+Expected files   : ft_strlen.c
+Allowed functions: 
+--------------------------------------------------------------------------------
+
+Bir dizgenin uzunluğunu döndüren bir fonksiyon yazın.
+
+İşleviniz aşağıdaki gibi bildirilmelidir:
+
+int	ft_strlen(char *str);

@@ -1,0 +1,11 @@
+Assignment name  : ft_itoa
+Expected files   : ft_itoa.c
+Allowed functions: malloc
+--------------------------------------------------------------------------------
+
+Bir int alan ve onu boş sonlu bir dizgeye dönüştüren bir işlev yazın.
+İşlev, ayırmanız gereken bir karakter dizisindeki sonucu döndürür.
+
+İşleviniz aşağıdaki gibi bildirilmelidir:
+
+char	*ft_itoa(int nbr);

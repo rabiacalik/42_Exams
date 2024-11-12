@@ -1,0 +1,13 @@
+Assignment name  : ft_atoi
+Expected files   : ft_atoi.c
+Allowed functions: None
+--------------------------------------------------------------------------------
+
+str dize bağımsız değişkenini bir tamsayıya dönüştüren bir işlev yazın (int yazın)
+ve geri verir.
+
+Standart atoi(const char *str) işlevi gibi çalışır, adama bakın.
+
+İşleviniz aşağıdaki gibi bildirilmelidir:
+
+int	ft_atoi(const char *str);

@@ -1,0 +1,23 @@
+Assignment name  : ft_list_remove_if
+Expected files   : ft_list_remove_if.c
+Allowed functions: free
+--------------------------------------------------------------------------------
+
+listeden kaldıran ft_list_remove_if adlı bir işlev yazın.
+pass list, verileri referans verilerine "eşit" olan herhangi bir öğeyi listeler.
+
+Aşağıdaki şekilde beyan edilecektir:
+
+void ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)());
+
+cmp iki void* alır ve her iki parametre de eşit olduğunda 0 döndürür.
+
+Aşağıdakileri içeren ft_list.h dosyasını kullanmanız gerekir:
+
+$>cat ft_list.h
+typedef struct      s_list
+{
+    struct s_list   *next;
+    void            *data;
+}                   t_list;
+$>

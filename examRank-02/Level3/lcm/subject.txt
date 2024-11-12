@@ -1,0 +1,28 @@
+Assignment name  : lcm
+Expected files   : lcm.c
+Allowed functions:
+--------------------------------------------------------------------------------
+
+İki işaretsiz int'yi parametre olarak alan ve şu değeri döndüren bir işlev yazın:
+bu parametrelerin hesaplanan LCM'si.
+
+Sıfır olmayan iki tam sayının LCM'si (En Düşük Ortak Kat), en küçük pozitif sayıdır
+her iki tam sayıya bölünebilen tamsayı.
+
+LCM iki şekilde hesaplanabilir:
+
+- Ortak bir sayı elde edene kadar her tam sayının katlarını hesaplayabilirsiniz.
+0 dışında birden fazla
+
+- Bu iki tamsayının HCF'sini (En Yüksek Ortak Faktör) kullanabilir ve
+aşağıdaki gibi hesaplayın:
+
+	LCM(x, y) = | x * y | / HCF(x, y)
+  
+  | x * y | "x'in y ile çarpımının mutlak değeri" anlamına gelir
+
+En az bir tamsayı boşsa, LCM 0'a eşittir.
+
+İşlevinizin prototipi aşağıdaki gibi olmalıdır:
+
+  unsigned int    lcm(unsigned int a, unsigned int b);

@@ -1,0 +1,18 @@
+Assignment name  : paramsum
+Expected files   : paramsum.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Kendisine iletilen bağımsız değişkenlerin sayısını ve ardından bunu görüntüleyen bir program yazın.
+yeni bir satır
+
+Argüman yoksa, sadece bir 0 ve ardından yeni bir satır görüntüleyin.
+Example:
+
+$>./paramsum 1 2 3 5 7 24
+6
+$>./paramsum 6 12 24 | cat -e
+3$
+$>./paramsum | cat -e
+0$
+$>

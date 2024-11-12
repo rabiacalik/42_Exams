@@ -1,0 +1,27 @@
+Assignment name  : do_op
+Expected files   : *.c, *.h
+Allowed functions: atoi, printf, write
+--------------------------------------------------------------------------------
+
+Üç dizi alan bir program yazın:
+- Birinci ve üçüncü, 10 tabanlı işaretli tamsayıların temsilidir
+  bu bir int'e sığar.
+- İkincisi, aşağıdakilerden seçilen bir aritmetik operatördür: + - * / %
+
+Program istenen aritmetik işlemin sonucunu göstermelidir,
+ardından yeni bir satır gelir. Parametre sayısı 3 değilse program
+sadece yeni bir satır görüntüler.
+
+Dizede hata veya gereksiz karakter bulunmadığını varsayabilirsiniz. Olumsuz
+Girdi veya çıktıdaki sayıların başında bir ve yalnızca bir '-' olacaktır. bu
+işlemin sonucu bir int'e sığar.
+Examples:
+
+$> ./do_op "123" "*" 456 | cat -e
+56088$
+$> ./do_op "9828" "/" 234 | cat -e
+42$
+$> ./do_op "1" "+" "-43" | cat -e
+-42$
+$> ./do_op | cat -e
+$

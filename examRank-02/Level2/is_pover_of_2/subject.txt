@@ -1,0 +1,12 @@
+Assignment name  : is_power_of_2
+Expected files   : is_power_of_2.c
+Allowed functions: None
+--------------------------------------------------------------------------------
+
+Verilen bir sayının 2'nin kuvveti olup olmadığını belirleyen bir fonksiyon yazınız.
+
+Bu işlev, verilen sayı 2'nin katıysa 1, aksi takdirde 0 döndürür.
+
+Your function must be declared as follows:
+
+int	    is_power_of_2(unsigned int n);

@@ -1,0 +1,13 @@
+Assignment name  : ft_putstr
+Expected files   : ft_putstr.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Standart çıktıda bir dizi görüntüleyen bir işlev yazın.
+
+İşleve iletilen işaretçi, dizenin ilk adresini içerir.
+karakter.
+
+İşleviniz aşağıdaki gibi bildirilmelidir:
+
+void	ft_putstr(char *str);

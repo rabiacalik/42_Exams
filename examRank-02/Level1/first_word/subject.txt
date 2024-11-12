@@ -1,0 +1,27 @@
+Assignment name  : first_word
+Expected files   : first_word.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Bir dizi alan ve ilk kelimesini, ardından bir diziyi gösteren bir program yazın.
+Yeni hat.
+
+Kelime, dizenin boşluklarla/sekmelerle veya kelimenin başı/sonu ile ayrılmış bir bölümüdür.
+dize.
+
+Parametre sayısı 1 değilse veya kelime yoksa, sadece
+yeni bir satır
+
+Examples:
+
+$> ./first_word "FOR PONY" | cat -e
+FOR$
+$> ./first_word "this        ...       is sparta, then again, maybe    not" | cat -e
+this$
+$> ./first_word "   " | cat -e
+$
+$> ./first_word "a" "b" | cat -e
+$
+$> ./first_word "  lorem,ipsum  " | cat -e
+lorem,ipsum$
+$>

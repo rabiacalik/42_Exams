@@ -1,0 +1,1 @@
+alpha mirror --> alfabetik aynası

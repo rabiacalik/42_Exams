@@ -1,0 +1,27 @@
+Assignment name  : union
+Expected files   : union.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+İki dizi alan ve katlamalar olmadan görüntüleyen bir program yazınız.
+dizelerden birinde görünen karakterler.
+
+Ekran, karakterlerin komut satırında göründüğü sırayla olacaktır ve
+ardından bir \n gelir.
+
+Argüman sayısı 2 değilse, program \n görüntüler.
+
+Example:
+
+$>./union zpadinton "paqefwtdjetyiytjneytjoeyjnejeyj" | cat -e
+zpadintoqefwjy$
+$>./union ddf6vewg64f gtwthgdwthdwfteewhrtag6h4ffdhsd | cat -e
+df6vewg4thras$
+$>./union "rien" "cette phrase ne cache rien" | cat -e
+rienct phas$
+$>./union | cat -e
+$
+$>
+$>./union "rien" | cat -e
+$
+$>

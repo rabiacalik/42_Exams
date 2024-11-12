@@ -1,0 +1,28 @@
+Assignment name  : rot_13
+Expected files   : rot_13.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Bir dizge alan ve onu görüntüleyen, her bir dizisini değiştiren bir program yazınız.
+harfler alfabetik sıraya göre 13 boşluk önde.
+
+'z', 'm' olur ve 'Z', 'M' olur. Vaka etkilenmeden kalır.
+
+Çıktıyı yeni bir satır takip edecektir.
+
+Argüman sayısı 1 değilse, program yeni bir satır görüntüler.
+
+Example:
+
+$>./rot_13 "abc"
+nop
+$>./rot_13 "My horse is Amazing." | cat -e
+Zl ubefr vf Nznmvat.$
+$>./rot_13 "AkjhZ zLKIJz , 23y " | cat -e
+NxwuM mYXVWm , 23l $
+$>./rot_13 | cat -e
+$
+$>
+$>./rot_13 "" | cat -e
+$
+$>

@@ -1,0 +1,25 @@
+Assignment name  : last_word
+Expected files   : last_word.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Bir dizgi alan ve son kelimesini bir \n ile izleyen bir program yazın.
+
+Kelime, dizenin boşluklarla/sekmelerle veya kelimenin başı/sonu ile ayrılmış bir bölümüdür.
+dize.
+
+Parametre sayısı 1 değilse veya kelime yoksa, yeni bir satır görüntüleyin.
+
+Example:
+
+$> ./last_word "FOR PONY" | cat -e
+PONY$
+$> ./last_word "this        ...       is sparta, then again, maybe    not" | cat -e
+not$
+$> ./last_word "   " | cat -e
+$
+$> ./last_word "a" "b" | cat -e
+$
+$> ./last_word "  lorem,ipsum  " | cat -e
+lorem,ipsum$
+$>

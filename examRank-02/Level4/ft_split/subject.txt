@@ -1,0 +1,14 @@
+Assignment name  : ft_split
+Expected files   : ft_split.c
+Allowed functions: malloc
+--------------------------------------------------------------------------------
+
+Bir dizge alan, onu kelimelere bölen ve şu şekilde döndüren bir fonksiyon yazın:
+NULL ile sonlandırılmış bir dize dizisi.
+
+Bir "sözcük", boşluklar/sekmeler/yeni ile ayrılmış bir dizgenin parçası olarak tanımlanır.
+satırlar veya dizenin başına/sonuna göre.
+
+İşleviniz aşağıdaki gibi bildirilmelidir:
+
+char    **ft_split(char *str);

@@ -1,0 +1,32 @@
+Assignment name  : sort_list
+Expected files   : sort_list.c
+Allowed functions:
+--------------------------------------------------------------------------------
+
+Aşağıdaki işlevleri yazın:
+
+t_list *sort_list(t_list* lst, int (*cmp)(int, int));
+
+Bu fonksiyon, fonksiyonu kullanarak parametre olarak verilen listeyi sıralamalıdır.
+uygulanacak sırayı seçmek için cmp işaretçisini kullanır ve
+sıralanmış listenin ilk öğesi.
+
+Kopyalar kalmalıdır.
+
+Girdiler her zaman tutarlı olacaktır.
+
+list.h dosyasında açıklanan t_list türünü kullanmalısınız.
+size sağlanan. O dosyayı eklemelisiniz
+(#include "list.h"), ancak teslim etmemelisiniz. Kendi listemizi kullanacağız
+ödevinizi derlemek için.
+
+Cmp olarak iletilen işlevler her zaman şu değerden farklı bir değer döndürür:
+a ve b doğru sıradaysa 0, aksi halde 0.
+
+Örneğin cmp olarak kullanılan aşağıdaki fonksiyon listeyi sıralayacaktır.
+artan sırada:
+
+int ascending(int a, int b)
+{
+	return (a <= b);
+}

@@ -1,0 +1,20 @@
+Assignment name  : ft_atoi_base
+Expected files   : ft_atoi_base.c
+Allowed functions: None
+--------------------------------------------------------------------------------
+
+str dize bağımsız değişkenini dönüştüren bir işlev yazın (taban N <= 16)
+bir tamsayıya (10 tabanında) çevirir ve onu döndürür.
+
+Girişte tanınan karakterler şunlardır: 0123456789abcdef
+Bunlar elbette istenen tabana göre kesilecek. İçin
+örneğin, 4 tabanı "0123"ü tanır ve 16 tabanı "0123456789abcdef"i tanır.
+
+Büyük harfler de tanınmalıdır: "12fdb3", "12FDB3" ile aynıdır.
+
+Eksi işaretleri ('-') yalnızca ilk karakter olduklarında yorumlanır.
+sicim.
+
+İşleviniz aşağıdaki gibi bildirilmelidir:
+
+int	ft_atoi_base(const char *str, int str_base);
