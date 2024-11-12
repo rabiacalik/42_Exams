@@ -1,0 +1,78 @@
+Ödev adi: cpp01_02
+Beklenen dosyalar: Warlock.cpp Warlock.hpp  
+                   ASpell.hpp ASpell.cpp  
+                   ATarget.hpp ATarget.cpp  
+                   Fwoosh.hpp Fwoosh.cpp  
+                   Dummy.hpp Dummy.cpp
+-------------------------------------------------------------------------
+
+Warlock sinifinda switch ifadesinin kullanimi YASAKTIR ve kullanilmasi -42 ile sonuçlanacaktir.
+
+Coplien formunda, aşağidaki korunan özniteliklere sahip ASpell adinda soyut bir sinif oluşturun:
+* name (string)
+* effects (string)
+
+Her ikisi de string döndüren getName ve getEffects olmak üzere getter'lara sahip olacaktir.
+
+Ayrica, bir ASpell nesnesine işaretçi döndüren clone adinda saf bir method ekleyin.
+
+Tüm bu fonksiyonlar sabit bir nesnede çağrilabilir.
+
+ASpell, adini ve efektlerini sirayla alan bir kurucuya sahiptir.
+
+Şimdi, Coplien formunda ATarget adinda soyut bir sinif oluşturacaksiniz. 
+Bir string olan type özniteliğine ve sabit bir string referansi döndüren 
+getType isimli getter'ina sahiptir.
+
+ASpell ile ayni şekilde, clone() adinda saf bir methoda sahiptir.
+
+Tüm bu fonksiyonlar sabit bir nesnede çağrilabilir.
+
+Türü alan bir kurucuya sahiptir.
+
+Şimdi ATarget'iniza sabit bir ASpell referansi alan getHitBySpell adinda bir fonksiyon ekleyin.
+
+Şunu gösterecektir:
+<TYPE> has been <EFFECTS>!
+
+<TYPE>, ATarget in türüdür ve <EFFECTS>, ASpell'in getEffects fonksiyonunun geri dönüşüdür.
+
+Son olarak, ASpell sinifiniza sabit bir ATarget referansi alan launch fonksiyonunu ekleyin.
+
+Bu, geçirilen nesnenin getHitBySpell fonksiyonunu çağirarak, parametre olarak geçerli örneği aktaracaktir.
+
+Her şey bittikten sonra, Fwoosh adinda bir ASpell sinifi uygulamasi oluşturun. Varsayilan kurucusu name'i olarak ayarlayacaktir. 
+Elbette clone() methodunu uygulayacaksiniz. Fwoosh için yeni bir Fwoosh nesnesine işaretçi döndürür.
+
+Ayni şekilde, türü "Hedef Tahammül Dummy'si" olan Dummy adinda somut bir ATarget oluşturun. clone() methodunu da uygulamalisiniz.
+
+Warlock'a aşağidaki üye fonksiyonlarini ekleyin:
+
+learnSpell, Warlock'un bir büyüyü öğrenmesini sağlayan bir ASpell nesnesine işaretçi alir.
+forgetSpell, bir büyü adina karşilik gelen bir string alir ve Warlock'un onu unutmasini sağlar. Bilinen bir büyü değilse hiçbir şey yapmaz.
+launchSpell, bir string (büyü adi) ve bir ATarget referansi alir, seçilen hedef üzerinde büyüyü başlatir. Bilinen bir büyü değilse hiçbir şey yapmaz.
+Warlock'unuzun bildiği büyileri depolamak için yeni bir özniteliğe ihtiyaciniz olacak. İşe yarayacak birkaç çeşit vardir, hangisinin en iyi olduğunu seçmek size kalmiştir.
+
+Aşağida olasi bir test ana kodu ve beklenen çiktisi verilmiştir:
+
+int main()
+{
+  Warlock richard("Richard", "the Titled");
+
+  Dummy bob;
+  Fwoosh* fwoosh = new Fwoosh();
+
+  richard.learnSpell(fwoosh);
+
+  richard.introduce();
+  richard.launchSpell("Fwoosh", bob);
+
+  richard.forgetSpell("Fwoosh");
+  richard.launchSpell("Fwoosh", bob);
+}
+
+~$ ./a.out | cat -e
+Richard: This looks like another boring day.$
+Richard: I am Richard, the Titled!$
+Target Practice Dummy has been fwooshed!$
+Richard: My job here is done!$
